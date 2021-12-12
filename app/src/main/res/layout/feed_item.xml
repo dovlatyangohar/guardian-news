@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FDFDFD"
+    android:layout_margin="6dp"
+    >
+
+    <TextView
+        android:id="@+id/newsTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="title"
+        android:textColor="@color/nf_blue"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/favImgView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/newsCategory"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="category"
+        android:textColor="@color/nf_blue"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/newsTitle"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/newsTitle"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="#A1A1A1"
+        app:layout_constraintEnd_toStartOf="@+id/favImgView"
+        app:layout_constraintStart_toStartOf="@+id/newsTitle"
+        app:layout_constraintTop_toBottomOf="@+id/newsTitle" />
+
+    <ImageView
+        android:id="@+id/favImgView"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_favorite_border_24" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
